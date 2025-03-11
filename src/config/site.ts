@@ -6,7 +6,7 @@ export const siteConfig = {
   ogImage: "https://flow.zafranudin.my/og.jpg",
   links: {
     github: "https://github.com/Xavier-IV/flow.zafranudin.my",
-    twitter: "https://twitter.com/zafranudin",
+    twitter: "https://twitter.com/zafranudin_z",
     docs: "/docs",
   },
 };
