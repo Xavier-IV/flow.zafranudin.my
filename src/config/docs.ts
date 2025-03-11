@@ -83,6 +83,16 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
+      title: "Rules",
+      items: [
+        {
+          title: "Form Handling",
+          href: "/docs/rules/form-handling",
+          items: [],
+        },
+      ],
+    },
+    {
       title: "Contributing",
       items: [
         {

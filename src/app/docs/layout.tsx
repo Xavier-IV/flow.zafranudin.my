@@ -15,14 +15,16 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
             <DocsSidebarNav items={docsConfig.sidebarNav} />
           </div>
         </aside>
-        <main className="relative w-full py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_100px]">
+        <main className="relative w-full py-6 lg:gap-10 lg:py-8 md:grid md:grid-cols-[1fr_50px] xl:grid-cols-[1fr_100px]">
           <div className="mx-auto w-full min-w-0">
             <div className="flex items-center justify-between px-4 mb-4 md:hidden">
               <DocsMobileNav items={docsConfig.sidebarNav} />
               <span className="font-bold">Documentation</span>
               <div className="w-9"></div> {/* Spacer for balance */}
             </div>
-            <div className="px-4 pb-12">{children}</div>
+            <div className="px-4 pb-12 overflow-hidden">
+              <div className="max-w-full overflow-x-hidden">{children}</div>
+            </div>
           </div>
         </main>
       </div>
